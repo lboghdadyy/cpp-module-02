@@ -15,6 +15,9 @@ class Point
         Point(float obj1, float obj2);
         Point& operator=(const Point& point);
         ~Point();
+        const Fixed getThex(void);
+        const Fixed getThey(void);
+        bool bsp( Point const a, Point const b, Point const c, Point const point);
 };
 
 # endif
