@@ -19,9 +19,10 @@ class   Fixed {
         void    setRawBits( int const raw );
         float   toFloat( void ) const;
         int     toInt(void) const;
-        // std::ostream &operator<<(std::ostream &o);
-};
+        // std::ostream& operator<<(std::ostream &o);
+        // Fixed ostream &operator<<(ostream &out, const Complex &c);
+    };
+    std::ostream &operator<<(std::ostream &out, const Fixed &c);
 
-std::ostream& operator << (std::ostream &o, Fixed const &fixed);
 
 # endif
